@@ -169,7 +169,7 @@ body {
     position: fixed;
     left: -250px; /* Панель скрыта по умолчанию */
     top: 0;
-    width: 250px;
+    width: 150px;
     height: 100%;
     background-color: rgba(0, 0, 0, 0); /* Прозрачный фон */
     padding: 20px;
