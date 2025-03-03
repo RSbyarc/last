@@ -246,7 +246,7 @@ body {
     .login-btn {
         position: fixed;
         top: 20px;
-        right: 20px;
+        right: 55px;
         background: rgba(255, 255, 255, 0.2);
         backdrop-filter: blur(10px);
         color: white;
