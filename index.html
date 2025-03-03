@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Document</title>
+
+	<link rel="stylesheet" href="css/main.css">
+
+	<script src="libs/gsap/gsap.min.js" defer></script>
+	<script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+	<script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+
+	<script src="js/app.js" defer></script>
+
+</head>
+<body>
+
+	<div class="wrapper">
+		<div class="content">
+
+			<header class="main-header">
+				<div class="layers">
+					<div class="layer__header">
+						<div class="layers__caption">Welcome to RedForce DDT</div>
+						<div class="layers__title">Sanrax</div>
+					</div>
+					<div class="layer layers__base" style="background-image: url(img/layer-base.png);"></div>
+					<div class="layer layers__middle" style="background-image: url(img/layer-middle.png);"></div>
+					<div class="layer layers__front" style="background-image: url(img/layer-front.png);"></div>
+				</div>
+			</header>
+		
+			<article class="main-article" style="background-image: url(img/dungeon.jpg);">
+				<div class="main-article__content">
+					<h2 class="main-article__header">To be continued</h2></p>
+				</div>
+				<div class="copy">© Sanrax by Arc</div>
+			</article>
+
+		</div>
+	</div>
+
+
+
+
+<!-- Кнопка входа -->
+<button class="login-btn" id="loginButton" onclick="openLoginModal()">Вход</button>
+
+<!-- Кнопка регистрации -->
+<button class="login-btn" id="registerButton" onclick="openRegisterModal()">Регистрация</button>
+
+<!-- Модальное окно входа -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Вход</h2>
+        <input type="text" placeholder="Логин" class="input-field" required>
+        <input type="password" placeholder="Пароль" class="input-field" required>
+        <button class="submit-btn">Войти</button>
+        <p>Нет аккаунта? <a href="#" class="switch-btn" onclick="switchToRegister()">Зарегистрироваться</a></p>
+    </div>
+</div>
+
+<!-- Модальное окно регистрации -->
+<div id="registerModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Регистрация</h2>
+        <input type="text" placeholder="Логин" class="input-field" required>
+        <input type="email" placeholder="Email" class="input-field" required>
+        <input type="password" placeholder="Пароль" class="input-field" required>
+        <input type="password" placeholder="Подтвердите пароль" class="input-field" required>
+        <button class="register-btn">Зарегистрироваться</button>
+        <p>Уже есть аккаунт? <a href="#" class="switch-btn" onclick="switchToLogin()">Войти</a></p>
+    </div>
+</div>
+
+
+
+ <!-- Гамбургер-меню -->
+    <div class="hamburger" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <!-- Боковая панель -->
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="#home">Главная</a></li>
+            <li><a href="#onas">О нас</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#portfolio">Портфолио</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+        </ul>
+    </div>
+
+
+
+
+</body>
+</html>
